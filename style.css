@@ -5,6 +5,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px; /* mai mult spațiu pe mobil */
 }
 
 h2 {
@@ -21,13 +22,12 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0;
+    gap: 15px; /* mai mult spațiu între elemente pe mobil */
 }
 
 input {
     width: 90%;
     padding: 10px;
-    margin: 0;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 30px;
@@ -38,7 +38,7 @@ button {
     color: white;
     border: none;
     margin: 20px 0;
-    padding: 10px 15px;
+    padding: 15px 20px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 40px;
@@ -52,4 +52,31 @@ button:hover {
     color: red;
     font-size: 30px;
     margin: 5px 0 0;
+}
+
+/* STILURI PENTRU TELEFOANE */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 24px;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 30px;
+        padding: 12px 15px;
+    }
+
+    #erori p {
+        font-size: 24px;
+    }
 }
